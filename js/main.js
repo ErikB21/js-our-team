@@ -1,40 +1,91 @@
 //MILESTONE 0:
 //Creare l’array di oggetti con le informazioni fornite.
 
-const dipendenti = [
+const cardDipendenti = [
     {
         nome: 'Wayne Barnett',
         ruolo: 'Founder & CEO',
-        foto: 'wayne-barnett-founder-ceo.jpg'
+        foto: 'img/wayne-barnett-founder-ceo.jpg'
     },
     {
         nome: 'Angela Caroll',
         ruolo: 'Chief Editor',
-        foto: 'angela-caroll-chief-editor.jpg'
+        foto: 'img/angela-caroll-chief-editor.jpg'
     },
     {
         nome: 'Walter Gordon',
         ruolo: 'Office Manager',
-        foto: 'walter-gordon-office-manager.jpg'
+        foto: 'img/walter-gordon-office-manager.jpg'
     },
     {
         nome: 'Angela Lopez',
         ruolo: 'Social Media Manager',
-        foto: 'angela-lopez-social-media-manager.jpg'
+        foto: 'img/angela-lopez-social-media-manager.jpg'
     },
     {
         nome: 'Scott Estrada',
         ruolo: 'Developer',
-        foto: 'scott-estrada-developer.jpg'
+        foto: 'img/scott-estrada-developer.jpg'
     },
     {
         nome: 'Barbara Ramos',
         ruolo: 'Graphic Designer',
-        foto: 'barbara-ramos-graphic-designer.jpg'
+        foto: 'img/barbara-ramos-graphic-designer.jpg'
     }
 ]
 
 //MILESTONE 1:
 //Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
-console.log(dipendenti);
+console.log(cardDipendenti);
+
+//MILESTONE 2:
+//Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+//creo il DOM e ciclo il mio array di oggetti
+for(let i = 0; i < cardDipendenti.length; i++){
+
+    const cardDipendentiDom = document.createElement('div');
+    cardDipendentiDom.classList.add('cardDipendenti');
+
+    let cardImage = document.createElement('div');
+    cardImage.classList.add('foto');
+
+    let image = document.createElement('img');
+    
+
+    let name = document.createElement('h2');
+    name.classList.add('nome');
+
+    let role = document.createElement('p');
+    role.classList.add('ruolo');
+    
+    
+    
+
+    const allCard = document.getElementById('portfolio');
+    allCard.appendChild(cardDipendentiDom);
+    cardDipendentiDom.appendChild(cardImage);
+    cardImage.appendChild(image);
+    cardDipendentiDom.appendChild(name);
+    cardDipendentiDom.appendChild(role);
+
+
+
+    let nomeI = cardDipendenti[i];
+    let nomeCard = nomeI['nome'];
+
+    let ruoloI = cardDipendenti[i];
+    let ruoloCard = ruoloI['ruolo'];
+
+    let fotoI = cardDipendenti[i];
+    let fotoCard = fotoI['foto'];
+
+    name.innerHTML = nomeCard;
+    role.innerHTML = ruoloCard;
+    
+}
+
+
+
+
