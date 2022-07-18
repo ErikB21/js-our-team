@@ -16,8 +16,18 @@
 
 .text{
     text-align: center;
-    width: 30%;
+    width: 40%;
     margin-bottom: 20px;
+}
+
+.text i{
+    margin-top: 20px;
+    color: royalblue;
+}
+
+.text h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 #portfolio{
@@ -29,13 +39,9 @@
 
 .cardDipendenti{
     width: 29%;
-    height: 400px;
     background-color: white;
     margin: 20px 10px 20px;
-}
-
-.foto{
-    width: 100%;
+    border-radius: 25px;
 }
 
 .foto img{
@@ -53,6 +59,8 @@
     padding: 10px 0px;
     text-align: center;
 }
+
+
 
 
 
