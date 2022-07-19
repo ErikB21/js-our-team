@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.text{
+    text-align: center;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.text i{
+    margin-top: 20px;
+    color: royalblue;
+}
+
+.text h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#portfolio{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardDipendenti{
+    width: 29%;
+    background-color: white;
+    margin: 20px 10px 20px;
+    border-radius: 25px;
+}
+
+.foto img{
+    width: 100%;
+}
+
+.nome{
+    font-weight: bold;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.ruolo{
+    font-style: italic;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
