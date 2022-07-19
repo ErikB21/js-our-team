@@ -34,19 +34,18 @@ const cardDipendenti = [
     }
 ]
 
-//MILESTONE 1:
-//Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
-console.log(cardDipendenti);
 
-//MILESTONE 2:
-//Stampare le stesse informazioni su DOM sottoforma di stringhe
 
 //BONUS 2:
 // Organizzare i singoli membri in card/schede
 
 //creo il DOM e ciclo il mio array di oggetti
 for(let i = 0; i < cardDipendenti.length; i++){
+
+    //MILESTONE 1:
+    //Stampare su console le informazioni di nome, ruolo e la stringa della foto
+    console.log(cardDipendenti[i]);
 
     const cardDipendentiDom = document.createElement('div');
     cardDipendentiDom.classList.add('cardDipendenti');

@@ -37,7 +37,11 @@ const cardDipendenti = [
 //MILESTONE 1:
 //Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
-console.log(cardDipendenti);
+//console.log(cardDipendenti);
+for(let i = 0; i < cardDipendenti.length; i++){
+    console.log(cardDipendenti[i]);
+}
+
 
 //MILESTONE 2:
 //Stampare le stesse informazioni su DOM sottoforma di stringhe
